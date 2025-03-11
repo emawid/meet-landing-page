@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+
+  --cyan-600: rgb(77, 150, 169);
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+  --white: #fafafa;
+
+  /* Spacing */
+
+  --gap-1400: 112px;
+  --gap-1000: 80px;
+  --gap-900: 74px;
+  --gap-800: 64px;
+  --gap-700: 56px;
+  --gap-500: 40px;
+  --gap-400: 32px;
+  --gap-300: 24px;
+  --gap-200: 16px;
+  --gap-100: 8px;
+  --gap-50: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  background-color: var(--white);
+}
+
+body {
+  font-family: 'Red Hat Display', system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* 
+Desktop: 1440px
+Tablet: 768px
+Mobile: 375px
+*/

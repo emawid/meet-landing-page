@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.container-width-305 {
+  max-width: 305px;
+}
+
+.container-width-311 {
+  max-width: 311px;
+}
+
+.image-wrapper {
+  margin-inline: auto;
+  max-width: 375px;
+  height: 160px;
+  overflow: hidden; /*not needed if img smaller than container*/
+  margin-bottom: 48px;
+}
+
+#hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*maintains aspect ratio*/
+}
+
+.vertical-line {
+  border-left: 1px solid var(--slate-300); /* Adjust the color and width as needed */
+  height: 80px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the vertical line */
+}
+
+.circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid var(--slate-300);
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+  color: var(--slate-600);
+}
+
+header {
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+#hero-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+#hero-btn-download {
+  background-color: var(--cyan-600);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+#hero-btn-download span {
+  color: var(--cyan-300);
+}
+
+#hero-btn-what {
+  background-color: var(--purple-300);
+  color: var(--white);
+}
+
+.btn {
+  padding: 16px 40px;
+  border-radius: 29px;
+  border: none;
+}
+
+#hero {
+  margin-bottom: 32px;
+}
+
+#main-content .container {
+  max-width: 311px;
+}
+
+#main-content-image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.image-grid-item {
+  display: flex;
+  gap: 16px;
+}
+
+.image-grid-item img {
+  width: 147.5px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#main-content-title {
+  color: var(--cyan-600);
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+#main-content-headline {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+#main-content-text {
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
+footer .circle {
+  margin: 0px;
+  margin-bottom: -29px;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+footer h2 {
+  margin-top: 64px;
+  margin-bottom: 24px;
+  color: var(--white);
+}
+
+footer p {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  color: var(--white);
+}
+
+#footer-btn {
+  background-color: var(--purple-600);
+  color: var(--white);
+  margin-bottom: 88px;
+  color: var(--white);
+}
+
+#background {
+  position: relative;
+  background-color: rgb(77 150 169 / 0.9); /* Adjust the opacity as needed */
+}
+
+#background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/mobile/image-footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}

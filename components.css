@@ -83,7 +83,7 @@ h1 {
 }
 
 #hero-btn-download:hover {
-  background-color: var(--cyan-300);
+  background-color: #71c0d4;
 }
 
 #hero-btn-download span {
@@ -93,6 +93,10 @@ h1 {
 #hero-btn-what {
   background-color: var(--purple-600);
   color: var(--white);
+}
+
+#hero-btn-what:hover {
+  background-color: #b18bdd;
 }
 
 .btn {
@@ -161,6 +165,10 @@ footer p {
   color: var(--white);
   margin-bottom: 88px;
   color: var(--white);
+}
+
+#footer-btn:hover {
+  background-color: #b18bdd;
 }
 
 #background {

@@ -82,6 +82,10 @@ h1 {
   color: var(--white);
 }
 
+#hero-btn-download:hover {
+  background-color: var(--cyan-300);
+}
+
 #hero-btn-download span {
   color: var(--cyan-300);
 }
@@ -97,10 +101,6 @@ h1 {
   border: none;
 }
 
-/* #hero {
-  margin-bottom: 32px;
-} */
-
 #main-content-image-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -111,7 +111,6 @@ h1 {
 
 .image-grid-item {
   display: flex;
-
   gap: 16px;
 }
 
@@ -240,13 +239,10 @@ footer p {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 133px;
-    max-width: 1440px;
+    width: 1440px;
     overflow: hidden;
+    /* gap: 127.85px; */
   }
-  /* .image-wrapper-desktop {
-    max-width: 368px;
-    overflow: hidden; not needed if img smaller than container
-  } */
 
   #left-image {
     transform: translateX(-26px);
@@ -317,5 +313,9 @@ footer p {
 
   #background::before {
     background-image: url('./assets/desktop/image-footer.jpg');
+  }
+
+  #main-content-text {
+    max-width: 544px;
   }
 }

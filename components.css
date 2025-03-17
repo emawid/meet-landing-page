@@ -311,4 +311,8 @@ footer p {
     width: 193px;
     margin-left: 63px;
   }
+
+  #background::before {
+    background-image: url('./assets/desktop/image-footer.jpg');
+  }
 }

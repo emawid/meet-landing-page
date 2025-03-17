@@ -74,6 +74,7 @@ h1 {
 #hero-text {
   margin-top: 0;
   margin-bottom: 24px;
+  color: var(--slate-600);
 }
 
 #hero-btn-download {
@@ -86,7 +87,7 @@ h1 {
 }
 
 #hero-btn-what {
-  background-color: var(--purple-300);
+  background-color: var(--purple-600);
   color: var(--white);
 }
 
@@ -134,6 +135,7 @@ h1 {
 #main-content-text {
   margin-top: 0px;
   margin-bottom: 64px;
+  color: var(--slate-600);
 }
 
 footer .circle {
@@ -256,6 +258,7 @@ footer p {
 
   header {
     margin-top: 80px;
+    margin-bottom: 87px;
   }
   #content-box {
     max-height: 314px;

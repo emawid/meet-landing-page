@@ -1,3 +1,7 @@
+main {
+  justify-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,10 @@
   height: 160px;
   overflow: hidden; /*not needed if img smaller than container*/
   margin-bottom: 48px;
+}
+
+.img-hide-mobile {
+  display: none;
 }
 
 #hero-image {
@@ -198,6 +206,10 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .image-grid-item img {
+    width: 152px;
+  }
+
   #hero-headline,
   #main-content-headline {
     width: 445px;
@@ -209,5 +221,94 @@ footer p {
 
   #background::before {
     background-image: url('./assets/tablet/image-footer.jpg');
+  }
+}
+
+@media (min-width: 1440px) {
+  .img-hide-mobile {
+    display: contents;
+  }
+
+  #img-hide-desktop {
+    display: none;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 133px;
+    max-width: 1440px;
+    overflow: hidden;
+  }
+  /* .image-wrapper-desktop {
+    max-width: 368px;
+    overflow: hidden; not needed if img smaller than container
+  } */
+
+  #left-image {
+    transform: translateX(-26px);
+  }
+
+  #right-image {
+    transform: translateX(26px);
+  }
+
+  header {
+    margin-top: 80px;
+  }
+  #content-box {
+    max-height: 314px;
+    padding: 0;
+  }
+
+  #hero-headline,
+  #hero-text {
+    margin-bottom: 32px;
+  }
+  .hero-btn-wrapper {
+    margin-bottom: 0px;
+  }
+
+  .image-grid-item img {
+    width: 256px;
+  }
+
+  #main-content-text {
+    margin-bottom: 72px;
+  }
+
+  .container-width-large {
+    max-width: 1120px;
+  }
+
+  #footer-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-inline: auto;
+  }
+
+  #background {
+    height: 312px;
+    display: flex;
+  }
+
+  #background h2 {
+    margin: 0;
+    text-align: left;
+    width: 445px;
+  }
+  #background p {
+    margin: 0;
+    width: 355px;
+    text-align: left;
+  }
+
+  #footer-btn {
+    margin: 0;
+    height: 56px;
+    width: 193px;
+    margin-left: 63px;
   }
 }

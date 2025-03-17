@@ -36,7 +36,19 @@
     </header>
     <main>
       <section id="hero">
-        <div class="image-wrapper">
+        <!-- add desktop left img here -->
+
+        <div class="img-hide-mobile image-wrapper-desktop">
+          <img
+            id="left-image"
+            src="./assets/desktop/image-hero-left.png"
+            width="394"
+            height="303"
+            alt="random people"
+          />
+        </div>
+
+        <div id="img-hide-desktop" class="image-wrapper">
           <img
             id="hero-image"
             src="./assets/tablet/image-hero.png"
@@ -45,7 +57,7 @@
             height="303"
           />
         </div>
-        <div class="container container-width-small">
+        <div id="content-box" class="container container-width-small">
           <h1 id="hero-headline" class="text-preset-1">
             Group Chat for Everyone
           </h1>
@@ -62,6 +74,16 @@
               What is it?
             </button>
           </div>
+        </div>
+        <!-- add right image here -->
+        <div class="img-hide-mobile image-wrapper-desktop">
+          <img
+            id="right-image"
+            src="./assets/desktop/image-hero-right.png"
+            width="394"
+            height="303"
+            alt="random people"
+          />
         </div>
       </section>
       <section id="main-content">
